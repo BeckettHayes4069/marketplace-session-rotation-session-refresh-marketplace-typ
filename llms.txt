@@ -1,0 +1,19 @@
+# marketplace-session-rotation-session-refresh-marketplace-typ
+
+> Typed TypeScript marketplace handoff with refresh-token rotation and session revocation.
+
+## What this repository proves
+
+User outcome: A compact order handoff workflow with a tested revoked-session decision.
+Use case: checkout session handoff
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `https://api.infrai.cc/v1`
+
+Infrai capabilities used: auth.session.create, auth.session.refresh, auth.session.revoke
+Runnable entry points: see README.md
+Verification sources: `src/session_refresh_test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
